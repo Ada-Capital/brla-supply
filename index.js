@@ -14,6 +14,10 @@ async function main() {
  const CeloSupply =    await getTotalSupply(CeloTokenAddress, CeloRpc)
  const xrpSupply = await getIssuerBalance(XRPIssuer)
  const supplyFinal = polygonSupply + MoonbeamSupply + CeloSupply + xrpSupply
+ console.log("polygonSupply: ", polygonSupply)
+ console.log("MoonbeamSupply: ", MoonbeamSupply)
+ console.log("CeloSupply: ", CeloSupply)
+ console.log("xrpSupply: ", xrpSupply)
  console.log("supplyFinal: ", supplyFinal)
 }
 
